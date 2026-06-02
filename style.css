@@ -531,6 +531,11 @@ a {
   gap: 20px;
 }
 
+/* Spacing: Button-Abstand nach dem Text */
+.about__text .reveal:last-child {
+  margin-top: 12px;
+}
+
 .body-text {
   font-size: 16px;
   color: var(--text-secondary);
@@ -579,8 +584,8 @@ a {
   color: var(--text-secondary);
   letter-spacing: 0.02em;
   text-transform: uppercase;
-  margin-bottom: 24px;
-  margin-top: 8px;
+  margin-bottom: 28px;
+  margin-top: 64px;
 }
 
 .milestones {
@@ -685,9 +690,10 @@ a {
   aspect-ratio: 4/3;
 }
 
+/* Alle Fotos gleich groß – kein tall-Item mehr */
 .gallery__item--tall {
-  grid-row: span 2;
-  aspect-ratio: auto;
+  grid-row: span 1;
+  aspect-ratio: 4/3;
 }
 
 .gallery__img {
