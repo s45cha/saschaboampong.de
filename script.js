@@ -112,4 +112,56 @@
     });
   });
 
+  /* ---- Kontaktformular AJAX Submit ---- */
+  const kontaktForm = document.getElementById('kontakt-form');
+  if (kontaktForm) {
+    kontaktForm.addEventListener('submit', async function (e) {
+      e.preventDefault();
+
+      const submitBtn = document.getElementById('submit-btn');
+      const successMsg = document.getElementById('form-success');
+      const errorMsg = document.getElementById('form-error');
+
+      // UI: Loading-Zustand
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Wird gesendet...';
+      successMsg.style.display = 'none';
+      errorMsg.style.display = 'none';
+
+      const formData = new FormData(kontaktForm);
+      const data = {
+        name: formData.get('name'),
+        email: formData.get('email'),
+        nachricht: formData.get('nachricht'),
+      };
+
+      try {
+        const response = await fetch('/kontakt', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(data),
+        });
+
+        const result = await response.json();
+
+        if (result.success) {
+          successMsg.style.display = 'block';
+          kontaktForm.reset();
+          submitBtn.textContent = 'Nachricht senden →';
+          submitBtn.disabled = false;
+        } else {
+          errorMsg.textContent = result.error || 'Ein Fehler ist aufgetreten. Bitte schreib direkt an hallo@saschaboampong.de.';
+          errorMsg.style.display = 'block';
+          submitBtn.textContent = 'Nachricht senden →';
+          submitBtn.disabled = false;
+        }
+      } catch (err) {
+        errorMsg.textContent = 'Verbindungsfehler. Bitte schreib direkt an hallo@saschaboampong.de.';
+        errorMsg.style.display = 'block';
+        submitBtn.textContent = 'Nachricht senden →';
+        submitBtn.disabled = false;
+      }
+    });
+  }
+
 })();

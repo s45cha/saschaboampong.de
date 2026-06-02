@@ -285,7 +285,7 @@
         <!-- Kontaktformular -->
         <div class="contact-form reveal reveal-3" id="kontaktformular">
           <h3 class="contact-form__title">Schreib mir direkt</h3>
-          <form class="form" name="kontakt" method="POST" action="#kontakt">
+          <form class="form" id="kontakt-form" name="kontakt" method="POST" action="/kontakt">
             <div class="form__group">
               <label class="form__label" for="name">Dein Name</label>
               <input class="form__input" type="text" id="name" name="name" placeholder="Max Mustermann" required />
@@ -298,7 +298,9 @@
               <label class="form__label" for="nachricht">Deine Nachricht</label>
               <textarea class="form__textarea" id="nachricht" name="nachricht" rows="5" placeholder="Was bewegt dich gerade?" required></textarea>
             </div>
-            <button type="submit" class="btn btn--primary btn--full">Nachricht senden →</button>
+            <button type="submit" class="btn btn--primary btn--full" id="submit-btn">Nachricht senden →</button>
+            <div id="form-success" style="display:none; margin-top:16px; padding:14px 18px; background:rgba(21,127,225,0.08); border:1px solid rgba(21,127,225,0.25); border-radius:10px; color:#157fe1; font-size:15px; font-weight:500;">✓ Deine Nachricht wurde gesendet. Ich melde mich persönlich bei dir!</div>
+            <div id="form-error" style="display:none; margin-top:16px; padding:14px 18px; background:rgba(239,68,68,0.08); border:1px solid rgba(239,68,68,0.25); border-radius:10px; color:#dc2626; font-size:15px;"></div>
           </form>
         </div>
       </div>
