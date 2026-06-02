@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 520" fill="none">
+  <rect width="420" height="520" fill="#eef2f8"/>
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="420" y2="520" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#dde6f4"/>
+      <stop offset="100%" stop-color="#c8d8ef"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#157fe1"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+    <clipPath id="circle">
+      <circle cx="210" cy="195" r="95"/>
+    </clipPath>
+  </defs>
+  <rect width="420" height="520" fill="url(#bg)"/>
+  <!-- Subtle pattern -->
+  <circle cx="210" cy="195" r="110" fill="rgba(21,127,225,0.08)"/>
+  <!-- Avatar body silhouette -->
+  <circle cx="210" cy="195" r="95" fill="#c8d8ef"/>
+  <!-- Head -->
+  <circle cx="210" cy="175" r="52" fill="#b0c4de"/>
+  <!-- Shoulders -->
+  <ellipse cx="210" cy="310" rx="85" ry="55" fill="#b0c4de"/>
+  <!-- Placeholder text -->
+  <text x="210" y="430" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="13" fill="rgba(71,85,105,0.7)" font-weight="500">Foto folgt</text>
+  <text x="210" y="450" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="11" fill="rgba(71,85,105,0.5)">Sascha Boampong</text>
+</svg>
