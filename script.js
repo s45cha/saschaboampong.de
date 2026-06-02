@@ -150,18 +150,29 @@
           submitBtn.textContent = 'Nachricht senden →';
           submitBtn.disabled = false;
         } else {
-          errorMsg.textContent = result.error || 'Ein Fehler ist aufgetreten. Bitte schreib direkt an hallo@saschaboampong.de.';
-          errorMsg.style.display = 'block';
+          // Fallback: mailto-Link öffnen
+          openMailtoFallback(data);
           submitBtn.textContent = 'Nachricht senden →';
           submitBtn.disabled = false;
         }
       } catch (err) {
-        errorMsg.textContent = 'Verbindungsfehler. Bitte schreib direkt an hallo@saschaboampong.de.';
-        errorMsg.style.display = 'block';
+        // Fallback: mailto-Link öffnen (z.B. lokal oder wenn Worker nicht verfügbar)
+        openMailtoFallback(data);
         submitBtn.textContent = 'Nachricht senden →';
         submitBtn.disabled = false;
       }
     });
   }
+
+  function openMailtoFallback(data) {
+    var subject = encodeURIComponent('Kontaktanfrage von ' + data.name);
+    var body = encodeURIComponent(
+      'Name: ' + data.name + '\n' +
+      'E-Mail: ' + data.email + '\n\n' +
+      data.nachricht
+    );
+    window.location.href = 'mailto:hallo@saschaboampong.de?subject=' + subject + '&body=' + body;
+  }
+
 
 })();
