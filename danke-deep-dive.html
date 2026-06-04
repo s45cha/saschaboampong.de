@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anmeldung erfolgreich · Sascha Boampong</title>
+  <meta name="description" content="Deine Anmeldung war erfolgreich – ein weiterer Schritt fehlt noch." />
+  <meta name="robots" content="noindex" />
+  <script>document.documentElement.className += ' js';</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="maritim.css" />
+  <script src="https://app.rybbit.io/api/script.js" data-site-id="5ec6693548c4" defer></script>
+  <style>
+    .danke { min-height: 100vh; display: flex; flex-direction: column;
+      background: #14222f;
+      background-image: linear-gradient(158deg, #16273a 0%, #154064 54%, #1f6fae 128%);
+      color: #eaf2f9; }
+
+    .danke .nav { background: transparent !important; backdrop-filter: none !important; border-bottom-color: transparent !important; }
+    .danke .nav__brand { color: #f1f7fc; }
+
+    .danke__main { flex: 1; display: grid; place-items: center; position: relative; isolation: isolate; overflow: hidden;
+      padding: clamp(118px, 17vh, 190px) var(--pad) clamp(54px, 8vh, 96px); }
+    .danke__main::before { content: ""; position: absolute; inset: 0; z-index: -2; pointer-events: none;
+      background: radial-gradient(46% 40% at 50% 4%, rgba(120,180,235,.30), transparent 68%),
+                  radial-gradient(40% 38% at 88% 98%, rgba(120,180,235,.16), transparent 72%),
+                  radial-gradient(36% 34% at 6% 84%, rgba(120,180,235,.12), transparent 74%); }
+    .danke__main::after { content: ""; position: absolute; z-index: -1; top: clamp(100px, 15vh, 180px); left: 50%; width: min(560px, 86vw); aspect-ratio: 1; transform: translateX(-50%);
+      border-radius: 50%; pointer-events: none;
+      background: radial-gradient(circle, transparent 38%, rgba(255,255,255,.05) 39%, transparent 40%, transparent 56%, rgba(255,255,255,.04) 57%, transparent 58%); }
+
+    .danke__inner { max-width: 680px; text-align: center; }
+
+    .danke__badge { position: relative; width: 92px; height: 92px; margin: 0 auto; border-radius: 50%; display: grid; place-items: center;
+      background: rgba(255,255,255,.07); border: 1.5px solid rgba(127,180,230,.7); color: #a9d2f5;
+      box-shadow: 0 0 0 8px rgba(127,180,230,.08), 0 24px 50px -16px rgba(0,0,0,.55), inset 0 0 24px rgba(127,180,230,.18); }
+    .danke__badge svg { width: 40px; height: 40px; filter: drop-shadow(0 2px 6px rgba(0,0,0,.35)); }
+    .danke__badge::after { content: ""; position: absolute; inset: -1.5px; border-radius: 50%; border: 1.5px solid rgba(127,180,230,.5); }
+    .js .danke__badge::after { animation: danke-ring 2.8s ease-out infinite; }
+    @keyframes danke-ring { 0% { transform: scale(1); opacity: .6; } 70% { transform: scale(1.5); opacity: 0; } 100% { opacity: 0; } }
+
+    .danke__title { margin-top: 28px; font-size: clamp(34px, 5.4vw, 62px); font-weight: 700; line-height: 1.04; letter-spacing: -.035em; color: #f4f9fd; text-wrap: balance; }
+
+    /* Attention callout — the crucial next step */
+    .danke__callout { margin: 32px auto 0; max-width: 580px; text-align: center;
+      background: rgba(243,180,90,.10); border: 1px solid rgba(243,180,90,.40); border-radius: 18px; padding: 24px 28px; backdrop-filter: blur(6px); }
+    .danke__callout-head { display: flex; align-items: center; justify-content: center; gap: 10px; font-size: clamp(17px, 1.9vw, 21px); font-weight: 700; letter-spacing: -.01em; color: #f4cd90; }
+    .danke__callout-text { margin-top: 12px; font-size: clamp(15px, 1.4vw, 17px); color: #cdddec; line-height: 1.6; }
+
+    .danke__cta { margin-top: 34px; }
+    .danke__bigbtn { display: inline-flex; align-items: center; gap: 12px; font-family: var(--font); font-weight: 700;
+      font-size: clamp(16px, 1.5vw, 18px); letter-spacing: -.01em; padding: 20px 42px; border-radius: 100px; cursor: pointer; border: none;
+      color: #0e2233; background: linear-gradient(118deg, #aed6ff 0%, #6fb0ec 52%, #3f8fdb 100%);
+      box-shadow: 0 0 0 1px rgba(255,255,255,.25) inset, 0 20px 44px -14px rgba(63,143,219,.7), 0 0 60px -10px rgba(127,180,230,.5);
+      transition: transform .3s cubic-bezier(.16,1,.3,1), box-shadow .3s; }
+    .danke__bigbtn:hover { transform: translateY(-3px); box-shadow: 0 0 0 1px rgba(255,255,255,.35) inset, 0 26px 54px -14px rgba(63,143,219,.8), 0 0 80px -8px rgba(127,180,230,.65); }
+    .danke__bigbtn .arrow { transition: transform .3s; }
+    .danke__bigbtn:hover .arrow { transform: translateX(5px); }
+    .danke__note { margin-top: 20px; font-size: 13px; color: #8fb0cc; letter-spacing: .01em; }
+
+    .js .danke-reveal { animation: danke-rise .85s cubic-bezier(.16,1,.3,1) both; }
+    .js .danke-reveal.dr2 { animation-delay: .12s; }
+    .js .danke-reveal.dr3 { animation-delay: .24s; }
+    .js .danke-reveal.dr4 { animation-delay: .36s; }
+    .js .danke-reveal.dr5 { animation-delay: .48s; }
+    @keyframes danke-rise { from { transform: translateY(22px); } to { transform: none; } }
+    @media (prefers-reduced-motion: reduce) {
+      .js .danke-reveal, .js .danke__badge::after { animation: none !important; transform: none !important; }
+    }
+
+    /* Minimal footer */
+    .danke__foot { padding: 28px var(--pad) 40px; text-align: center; font-size: 13.5px; color: #8aa9c4; }
+    .danke__foot-links { display: inline-flex; gap: 18px; margin-top: 8px; }
+    .danke__foot-links a { color: #a9c6e2; transition: color .25s; }
+    .danke__foot-links a:hover { color: #fff; }
+  </style>
+</head>
+<body class="danke">
+
+  <header class="nav" data-nav>
+    <div class="nav__bar">
+      <a href="index.html" class="nav__brand">Sascha Boampong</a>
+    </div>
+  </header>
+
+  <main class="danke__main">
+    <div class="danke__inner">
+      <div class="danke__badge danke-reveal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7" /></svg>
+      </div>
+      <h1 class="danke__title danke-reveal dr2">Deine Anmeldung war erfolgreich</h1>
+
+      <div class="danke__callout danke-reveal dr3">
+        <div class="danke__callout-head"><span aria-hidden="true">⚠️</span> Noch ein weiterer Schritt:</div>
+        <p class="danke__callout-text">Bitte klicke auf den Button, um die Zugangsdaten und alle weiteren Infos zu erhalten:</p>
+      </div>
+
+      <div class="danke__cta danke-reveal dr4">
+        <a href="https://luma.com/fzjxphxs" class="danke__bigbtn">Registrieren und Zugriff erhalten <span class="arrow">→</span></a>
+      </div>
+
+      <p class="danke__note danke-reveal dr5">Die Abbuchung erfolgt durch CopeCart</p>
+    </div>
+  </main>
+
+  <footer class="danke__foot">
+    <div>© Boampong Invest GmbH</div>
+    <div class="danke__foot-links">
+      <a href="datenschutz.html">Datenschutz</a>
+      <a href="impressum.html">Impressum</a>
+    </div>
+  </footer>
+
+</body>
+</html>

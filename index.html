@@ -1,311 +1,210 @@
 <!DOCTYPE html>
-<html lang="de" class="scroll-smooth">
+<html lang="de">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sascha Boampong – Unternehmer und Begleiter</title>
-  <meta name="description" content="Ich bin Sascha Boampong, Unternehmer. Als mehrfacher Gründer und Begleiter helfe ich Selbstständigen und Unternehmern, ihren Erfolg zu erreichen – und ihn dann auch zu genießen." />
+  <title>Sascha Boampong — Geerdet · Maritim</title>
+  <meta name="description" content="Sascha Boampong, Unternehmer und Begleiter. Innere Klarheit. Äußeres Wachstum." />
+  <script>document.documentElement.className += ' js';</script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Manrope:wght@700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="maritim.css" />
+  <script src="https://app.rybbit.io/api/script.js" data-site-id="5ec6693548c4" defer></script>
 </head>
-<body>
+<body data-screen-label="Geerdet Maritim">
 
-  <!-- ===== STICKY NAVIGATION ===== -->
-  <header class="nav" id="top">
-    <div class="nav__inner container">
-      <a href="#top" class="nav__logo">Sascha Boampong</a>
+  <header class="nav" data-nav>
+    <div class="nav__bar">
+      <a href="#top" class="nav__brand">Sascha Boampong</a>
       <nav class="nav__links" aria-label="Hauptnavigation">
-        <a href="#mein-weg" class="nav__link">Zusammenarbeit</a>
+        <a href="#prozess" class="nav__link">Zusammenarbeit</a>
         <a href="#referenzen" class="nav__link">Referenzen</a>
-        <a href="#ueber-mich" class="nav__link">Über mich</a>
+        <a href="#ueber" class="nav__link">Über mich</a>
         <a href="#faq" class="nav__link">FAQ</a>
-        <a href="#kontakt" class="nav__link nav__link--cta btn btn--primary">Lass uns reden</a>
+        <a href="#kontakt" class="nav__cta">Lass uns reden</a>
       </nav>
-      <button class="nav__burger" aria-label="Menü öffnen" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-    <!-- Mobile menu -->
-    <div class="nav__mobile" id="mobile-menu" aria-hidden="true">
-      <a href="#mein-weg" class="nav__mobile-link">Zusammenarbeit</a>
-      <a href="#referenzen" class="nav__mobile-link">Referenzen</a>
-      <a href="#ueber-mich" class="nav__mobile-link">Über mich</a>
-      <a href="#faq" class="nav__mobile-link">FAQ</a>
-      <a href="#kontakt" class="nav__mobile-link nav__mobile-link--cta">Lass uns reden</a>
+      <button class="nav__burger" data-burger aria-label="Menü" aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
   </header>
+  <div class="nav__mobile" data-menu>
+    <a href="#prozess">Zusammenarbeit</a>
+    <a href="#referenzen">Referenzen</a>
+    <a href="#ueber">Über mich</a>
+    <a href="#faq">FAQ</a>
+    <a href="#kontakt">Lass uns reden</a>
+  </div>
 
-  <main>
+  <main id="top">
 
-    <!-- ===== 1 · HERO ===== -->
-    <section class="hero section" id="hero">
-      <div class="container hero__inner">
+    <!-- HERO -->
+    <section class="hero wrap">
+      <div class="hero__grid">
         <div class="hero__content">
-          <h1 class="hero__headline reveal">
-            Innere Klarheit.<br>
-            <span class="text-gradient">Äußeres Wachstum.</span>
-          </h1>
-          <p class="hero__text reveal reveal-2">
-            Hi, ich bin Sascha. Als mehrfacher Unternehmer und Begleiter helfe ich Selbstständigen und Unternehmer:innen, ihre Erfolge zu erreichen und auch genießen zu können.
-          </p>
-          <p class="hero__text reveal reveal-3">
-            Wir setzen gemeinsam im Innen an, nicht nur im Außen: an den Challenges, an denen der Kopf nicht mehr weiterkommt. Da, wo du alles verstanden hast und das Problem trotzdem bleibt. Business ist Hochleistungssport, und deshalb lernen wir auch gemeinsam, wie Regeneration wieder für dich funktionieren kann – ohne dass du deinen Drive dabei verlierst.
-          </p>
-          <div class="hero__actions reveal reveal-4">
-            <a href="#kontakt" class="btn btn--primary">Lass uns reden</a>
+          <span class="hero__kicker reveal">Business meets Inner Work</span>
+          <h1 class="hero__title reveal d1">Innere Klarheit.<br /><em>Äußeres Wachstum.</em></h1>
+          <p class="hero__lead reveal d2">Hi, ich bin Sascha. Als mehrfacher Unternehmer und Begleiter helfe ich Selbstständigen und Unternehmer:innen, ihre Erfolge zu erreichen und auch genießen zu können. Wir setzen gemeinsam im Innen an, nicht nur im Außen – da, wo du alles verstanden hast und das Problem trotzdem bleibt.</p>
+          <div class="hero__actions reveal d3">
+            <a href="#kontakt" class="btn btn--solid">Lass uns reden <span class="arrow">→</span></a>
+            <a href="#ueber" class="btn btn--ghost">Über mich</a>
           </div>
         </div>
-        <div class="hero__photo-wrap reveal hero__photo-anim">
+        <div class="hero__figure reveal d2">
           <div class="hero__photo">
-            <img
-              src="assets/sascha-portrait.jpg"
-              alt="Sascha Boampong – Unternehmer und Begleiter"
-              class="hero__img"
-              width="420"
-              height="520"
-              loading="eager"
-            />
+            <img src="assets/sascha-profil.jpg" alt="Sascha Boampong" width="440" height="517" loading="eager" />
+          </div>
+          <div class="hero__badge">
+            <b>Sascha Boampong</b>
+            <span>Unternehmer &amp; Begleiter.</span>
           </div>
         </div>
       </div>
+      <div class="hero__meta">
+        <div class="hero__meta-item reveal d1"><b>Unternehmer</b><span>Gründer mehrerer Online-Unternehmen</span></div>
+        <div class="hero__meta-item reveal d2"><b>Begleiter</b><span>Inner Work für Unternehmer:innen</span></div>
+        <div class="hero__meta-item reveal d3"><b>Creator</b><span>Content für entspannte Skalierung</span></div>
+      </div>
     </section>
 
-    <!-- ===== 2 · ZUSAMMENARBEIT (3 Spalten) ===== -->
-    <section class="section section--alt" id="mein-weg">
-      <div class="container">
-        <div class="section-label reveal">— DER PROZESS</div>
-        <h2 class="section-title reveal reveal-2">Wie wir zusammenarbeiten.</h2>
-        <div class="three-col reveal reveal-3">
-          <div class="card">
-            <div class="card__number">01</div>
+    <!-- PROZESS -->
+    <section class="section" id="prozess">
+      <div class="wrap">
+        <header class="shead reveal">
+          <div class="shead__meta"><span class="shead__num">01 — Der Prozess</span><span class="eyebrow">So arbeiten wir</span></div>
+          <h2 class="shead__title">So sieht eine Zusammenarbeit aus</h2>
+        </header>
+        <div class="cards">
+          <article class="card reveal d1">
+            <div class="card__num">01</div>
             <h3 class="card__title">Klarheit finden</h3>
             <p class="card__text">Zuerst schauen wir, wo deine Herausforderung wirklich liegt und was du dir wünschst. Oft ist genau das der eigentliche Schritt: herauszufinden, was das Ziel überhaupt ist. Ich helfe dir, durch den Nebel zu kommen.</p>
-          </div>
-          <div class="card">
-            <div class="card__number">02</div>
+          </article>
+          <article class="card reveal d2">
+            <div class="card__num">02</div>
             <h3 class="card__title">Ursache entdecken</h3>
             <p class="card__text">Dann gehen wir an die Wurzel. Mit wissenschaftlich fundierten Techniken, die unterhalb des Verstandes ansetzen – dort, wo die Herausforderungen tatsächlich entstehen. Werkzeuge wie Hypnose und Breathwork helfen dir dabei, dein Nervensystem zu regulieren und an die eigentlichen Ursachen heranzukommen.</p>
-          </div>
-          <div class="card">
-            <div class="card__number">03</div>
+          </article>
+          <article class="card reveal d3">
+            <div class="card__num">03</div>
             <h3 class="card__title">In den Alltag integrieren</h3>
             <p class="card__text">Wir beobachten in jeder Session, was sich verändert hat. Wir nehmen die Themen, die sich zeigen, Schritt für Schritt mit in deinen Alltag.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- REFERENZEN -->
+    <section class="section section--testi" id="referenzen">
+      <div class="wrap">
+        <header class="shead reveal">
+          <div class="shead__meta"><span class="shead__num">02 — Referenzen</span><span class="eyebrow">Stimmen</span></div>
+          <h2 class="shead__title">Was andere über mich sagen</h2>
+        </header>
+        <div class="testi">
+          <article class="testi__feature reveal">
+            <div class="testi__media"><img src="assets/kerstin.webp" alt="Kerstin Esser" width="500" height="430" loading="lazy" /></div>
+            <div class="testi__content">
+              <div class="testi__mark">”</div>
+              <blockquote class="testi__big">„Antworten fühlen auf Fragen, wo ich mit dem Verstand nicht weiterkam."</blockquote>
+              <p class="testi__text">Sascha hält einen unglaublich sicheren Raum, in dem alles da sein darf. […] Fragen rund um die Freiberuflichkeit – und die Antworten kommen aus ganz anderen Ecken und treffen ins Herz. Danke Sascha!</p>
+              <div class="testi__who"><div><div class="testi__name">Kerstin Esser</div><div class="testi__role">Coachin</div></div></div>
+            </div>
+          </article>
+          <div class="testi__row">
+            <article class="testi__card reveal d1">
+              <div class="testi__head"><img class="testi__ava" src="assets/yannick.webp" alt="Yannick Bernard" width="56" height="56" loading="lazy" /><div><div class="testi__name">Yannick Bernard</div><div class="testi__role">Marketing Consultant</div></div></div>
+              <p class="testi__hl">„Millionen-Unternehmer und trotzdem Mensch geblieben."</p>
+              <p class="testi__sm">Sascha hebt sich von vielen anderen ab, indem er authentisches Marketing betreibt. […] Offen, ehrlich und bodenständig erzählt er sowohl von seinen Erfolgen als auch von seinen Misserfolgen. Seinen Content schicke ich regelmäßig an befreundete Selbstständige und Unternehmer.</p>
+            </article>
+            <article class="testi__card reveal d2">
+              <div class="testi__head"><img class="testi__ava" src="assets/lea.webp" alt="Lea Martial" width="56" height="56" loading="lazy" /><div><div class="testi__name">Lea Martial</div><div class="testi__role">Gründerin</div></div></div>
+              <p class="testi__hl">„Zum ersten Mal wirklich verstanden, worum es geht."</p>
+              <p class="testi__sm">Obwohl ich schon einige Erfahrungen mit Breathwork gemacht hatte […]. Ich habe mich die ganze Session über sicher und professionell geleitet gefühlt – und es war eine sehr bereichernde persönliche Reise durch meine innere Welt.</p>
+            </article>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ===== 3 · REFERENZEN ===== -->
-    <section class="section" id="referenzen">
-      <div class="container">
-        <div class="section-label reveal">— REFERENZEN</div>
-        <h2 class="section-title reveal reveal-2">Was Klienten sagen.</h2>
-        <div class="testimonials reveal reveal-3">
-
-          <div class="testimonial">
-            <blockquote class="testimonial__quote">
-              <p class="testimonial__highlight">„Antworten zu fühlen auf Fragen, wo ich mit dem Verstand nicht weiterkam."</p>
-              <p class="testimonial__body">Sascha hält einen unglaublich sicheren Raum, in dem alles da sein darf. […] Fragen rund um die Freiberuflichkeit – und die Antworten kommen aus ganz anderen Ecken und treffen ins Herz. Danke Sascha!</p>
-            </blockquote>
-            <footer class="testimonial__footer">
-              <div class="testimonial__avatar" aria-hidden="true">KE</div>
-              <div>
-                <div class="testimonial__name">Kerstin Esser</div>
-                <div class="testimonial__role">Coachin</div>
-              </div>
-            </footer>
-          </div>
-
-          <div class="testimonial">
-            <blockquote class="testimonial__quote">
-              <p class="testimonial__highlight">„Millionen-Unternehmer und trotzdem Mensch geblieben."</p>
-              <p class="testimonial__body">Sascha hebt sich von vielen anderen ab, indem er authentisches Marketing betreibt. […] Offen, ehrlich und bodenständig erzählt er sowohl von seinen Erfolgen als auch von seinen Misserfolgen. Seinen Content schicke ich regelmäßig an befreundete Selbstständige und Unternehmer.</p>
-            </blockquote>
-            <footer class="testimonial__footer">
-              <div class="testimonial__avatar" aria-hidden="true">YB</div>
-              <div>
-                <div class="testimonial__name">Yannick Bernard</div>
-                <div class="testimonial__role">Marketing Consultant</div>
-              </div>
-            </footer>
-          </div>
-
-          <div class="testimonial">
-            <blockquote class="testimonial__quote">
-              <p class="testimonial__highlight">„Zum ersten Mal wirklich verstanden, worum es geht."</p>
-              <p class="testimonial__body">Obwohl ich schon einige Erfahrungen mit Breathwork gemacht hatte […]. Ich habe mich die ganze Session über sicher und professionell geleitet gefühlt – und es war eine sehr bereichernde persönliche Reise durch meine innere Welt.</p>
-            </blockquote>
-            <footer class="testimonial__footer">
-              <div class="testimonial__avatar" aria-hidden="true">LM</div>
-              <div>
-                <div class="testimonial__name">Lea Martial</div>
-                <div class="testimonial__role">Gründerin</div>
-              </div>
-            </footer>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== 4 · ÜBER MICH (zusammengeführt) ===== -->
-    <section class="section section--alt" id="ueber-mich">
-      <div class="container">
-        <div class="section-label reveal">— ÜBER MICH</div>
-        <h2 class="section-title reveal reveal-2">Kein Coach, sondern Unternehmer und Begleiter.</h2>
+    <!-- ÜBER MICH -->
+    <section class="section" id="ueber">
+      <div class="wrap">
+        <header class="shead reveal">
+          <div class="shead__meta"><span class="shead__num">03 — Über mich</span><span class="eyebrow">Wer ich bin</span></div>
+          <h2 class="shead__title">Nicht irgendein Coach, sondern Unternehmer und Begleiter.</h2>
+        </header>
         <div class="about__grid">
+          <div class="about__figure reveal d1">
+            <div class="about__photo about__photo--award">
+              <img src="assets/sascha-award-crop.png" alt="Sascha Boampong mit dem Gold Award der Online Sales Academy" width="400" height="510" loading="lazy" />
+            </div>
+          </div>
           <div class="about__text">
-            <p class="body-text reveal reveal-3">Bevor ich Unternehmer wurde, war ich im Bereich Feuerwehr und Rettungsdienst tätig – jahrelang habe ich unter Hochdruck Menschen durch Extremsituationen begleitet. Im Unternehmertum begegnen wir auch immer Extremsituationen.</p>
-            <p class="body-text reveal reveal-3">Ich habe selbst gebraucht, was ich heute anbiete. Später als Selbstständiger und Unternehmer war ich getrieben, konnte kaum abschalten – und obwohl ich Dinge erreichte, von denen ich nur hätte träumen können, fühlte ich keine Zufriedenheit. Irgendwann verstand ich: Wichtig neben der Arbeit an Marketing, Sales und Fulfillment ist die innere Arbeit, unterhalb des bewussten Verstandes.</p>
-            <p class="body-text reveal reveal-3">In erster Linie bin ich Unternehmer und durchlebe jeden Tag noch das, was viele durchleben. Ich habe mehrere Online-Unternehmen aufgebaut, einige mit Millionenumsätzen. Ich weiß, wie es ist, aus dem Nichts etwas zu erschaffen und daraus ein Unternehmen mit Verantwortung für viele Menschen zu bauen.</p>
-            <p class="body-text reveal reveal-3">Privat bin ich Papa einer Tochter und lebe auf dem Land an der Ostsee. Ich liebe die Natur, interessante Bücher, gutes Essen und das unaufgeregte Leben. Nach Jahren voller Action genieße ich, dass das Leben auch leise schön sein darf.</p>
-            <div class="reveal reveal-4">
-              <a href="#kontakt" class="btn btn--primary">Lass uns reden</a>
-            </div>
+            <p class="reveal d1">Bevor ich Unternehmer wurde, war ich im Bereich Feuerwehr und Rettungsdienst tätig. Jahrelang habe ich unter Hochdruck Menschen durch Extremsituationen begleitet.</p>
+            <p class="reveal d1">Später als Selbstständiger und Unternehmer war ich getrieben und konnte kaum abschalten. Obwohl ich Dinge erreichte, von denen ich nur hätte träumen können, fühlte ich keine innere Zufriedenheit.</p>
+            <p class="reveal d1">Irgendwann verstand ich: Wichtiger als die reine Arbeit an Marketing, Sales und Fulfillment ist die innere Arbeit.</p>
+            <p class="reveal d1">In erster Linie bin ich Unternehmer und durchlebe jeden Tag noch das, was du auch durchlebst. Ich habe mehrere Online-Unternehmen aufgebaut, einige mit Millionenumsätzen. Ich weiß, wie es ist, aus dem Nichts etwas zu erschaffen und die Verantwortung für große Projekte und Menschen zu tragen.</p>
+            <p class="reveal d1">Privat bin ich Vater einer Tochter und lebe mit meiner Familie auf dem Land an der Ostsee. Ich liebe die Natur, Bücher, gutes Essen und das unaufgeregte Leben. Nach Jahren voller Action genieße ich, dass das Leben jetzt auch leise schön sein darf.</p>
+            <a href="#kontakt" class="btn btn--solid reveal d2">Lass uns reden <span class="arrow">→</span></a>
           </div>
-          <div class="about__photo-wrap reveal">
-            <div class="about__photo">
-              <img
-                src="assets/sascha-profil.jpg"
-                alt="Sascha Boampong"
-                class="about__img"
-                width="380"
-                height="460"
-                loading="lazy"
-              />
+        </div>
+
+        <div class="projects reveal">
+          <div class="projects__label">Projekte, die ich mitgegründet habe</div>
+          <div class="marquee">
+            <div class="marquee__track" data-marquee>
+              <div class="logo"><span class="logo__mark">DNP</span><span class="logo__name">Digitale Nomaden Podcast</span></div>
+              <div class="logo"><span class="logo__mark">FP</span><span class="logo__name">Das Freiheitspaket</span></div>
+              <div class="logo"><span class="logo__mark">OSA</span><span class="logo__name">Online Sales Academy</span></div>
+              <div class="logo"><span class="logo__mark">SC</span><span class="logo__name">Scaling Circle</span></div>
+              <div class="logo"><span class="logo__mark">OBP</span><span class="logo__name">Online Business Podcast</span></div>
             </div>
           </div>
         </div>
 
-        <!-- Unternehmen -->
-        <h3 class="milestones-title reveal reveal-3">Projekte, an denen ich mitgewirkt habe</h3>
-        <div class="milestones reveal reveal-4">
-          <div class="milestone">
-            <div class="milestone__icon">🎙</div>
-            <div class="milestone__label">Digitale Nomaden Podcast</div>
-            <div class="milestone__desc">Einer der erfolgreichsten Business-Podcasts Deutschlands</div>
-          </div>
-          <div class="milestone">
-            <div class="milestone__icon">📦</div>
-            <div class="milestone__label">Das Freiheitspaket</div>
-            <div class="milestone__desc">Deutschlands größte Sammlung von Online-Kursen &amp; E-Books zum Thema Online Business</div>
-          </div>
-          <div class="milestone">
-            <div class="milestone__icon">🎓</div>
-            <div class="milestone__label">Online Sales Academy</div>
-            <div class="milestone__desc">Deutschlands größte staatlich zertifizierte Ausbildung für Online-Vertrieb</div>
-          </div>
-        </div>
-
-        <!-- Bildergalerie -->
-        <div class="gallery reveal reveal-5">
-          <div class="gallery__item">
-            <img src="assets/sascha-mic.jpg" alt="Sascha Boampong auf der Bühne mit Mikrofon" loading="lazy" class="gallery__img" />
-          </div>
-          <div class="gallery__item gallery__item--tall">
-            <img src="assets/sascha-buehne-energie.jpg" alt="Sascha Boampong mit begeistertem Publikum" loading="lazy" class="gallery__img" />
-          </div>
-          <div class="gallery__item">
-            <img src="assets/sascha-buehne-podcast.jpg" alt="Sascha Boampong beim Digitale Nomaden Podcast Event" loading="lazy" class="gallery__img" />
-          </div>
-          <div class="gallery__item">
-            <img src="assets/sascha-dnx.jpg" alt="Sascha Boampong bei der DNX Konferenz" loading="lazy" class="gallery__img" />
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ===== 5 · FAQ ===== -->
-    <section class="section" id="faq">
-      <div class="container">
-        <div class="section-label reveal">— FAQ</div>
-        <h2 class="section-title reveal reveal-2">Fragen, die mir immer wieder gestellt werden.</h2>
-        <div class="faq reveal reveal-3">
-
-          <details class="faq__item">
-            <summary class="faq__question">
-              Für wen ist diese Arbeit – und für wen nicht?
-              <span class="faq__icon" aria-hidden="true"></span>
-            </summary>
-            <div class="faq__answer">
-              <p>Für Selbstständige und Unternehmer:innen, die weiter wachsen wollen – aber nicht länger auf Kosten von Gesundheit und Leben. Menschen, die getrieben sind, kaum noch abschalten können und sich fragen: „Ich habe so viel erreicht – warum kann ich es nicht genießen?" Oder die ein Problem im Außen schon verstanden haben und mit dem Verstand trotzdem nicht weiterkommen.</p>
-              <p>Worum es nicht geht: einfach den Fuß vom Gas zu nehmen. Es geht nicht ums Weniger, sondern darum, erfolgreich zu wachsen und dabei wieder bei sich anzukommen und sich zu erinnern, warum man mal gestartet ist.</p>
-            </div>
-          </details>
-
-          <details class="faq__item">
-            <summary class="faq__question">
-              Wie läuft eine Zusammenarbeit konkret ab?
-              <span class="faq__icon" aria-hidden="true"></span>
-            </summary>
-            <div class="faq__answer">
-              <p>Du meldest dich über das Kontaktformular, und wir vereinbaren ein Kennenlernen – per Telefon oder Zoom, ganz wie es dir passt. Wir schauen gemeinsam auf dein Ziel und deine Herausforderungen und finden heraus, ob und wie wir zusammenarbeiten wollen. Danach geht es los. Die eigentliche Arbeit findet online statt.</p>
-            </div>
-          </details>
-
-          <details class="faq__item">
-            <summary class="faq__question">
-              Wie kann ich mir eine Session vorstellen?
-              <span class="faq__icon" aria-hidden="true"></span>
-            </summary>
-            <div class="faq__answer">
-              <p>Eine Standard-Session gibt es nicht. Wir schauen zuerst, mit welchem Thema du gerade hereinkommst, und dann wähle ich die Technik, die dazu passt – nicht umgekehrt. Du musst nicht zu meinen Methoden passen, die Methode passt sich dir an. Oft arbeiten wir dabei unterhalb des Verstandes: nicht nur reden, sondern dort ansetzen, wo das Problem wirklich sitzt, die Ursache lösen und das Ergebnis in deinen Alltag integrieren. Im Mittelpunkt steht immer dein Ziel – kein Schema F, in das ich dich presse.</p>
-            </div>
-          </details>
-
-          <details class="faq__item">
-            <summary class="faq__question">
-              Was unterscheidet dich von einem klassischen Business-Coach?
-              <span class="faq__icon" aria-hidden="true"></span>
-            </summary>
-            <div class="faq__answer">
-              <p>Ehrlich gesagt tue ich mich mit dem Wort „Coach" schwer – zu viele Instagram-Marketer haben es in Verruf gebracht. Ich bin in erster Linie selbst Unternehmer und begleite Selbstständige und Unternehmer:innen auf dem Weg in ihr Innenleben. Das ist wohl der Hauptunterschied. Ich lehne Geld, Erfolg und Wachstum nicht ab – ganz im Gegenteil, ich habe selbst weiterhin unternehmerischen Drive. Ich verbinde die unternehmerische Arbeit mit Inner Work. Es geht nicht darum, deinen Funnel zu ändern, sondern an die Wurzel deiner Herausforderung zu gehen und dort nachhaltige Veränderung zu schaffen.</p>
-            </div>
-          </details>
-
-          <details class="faq__item">
-            <summary class="faq__question">
-              Wie komme ich mit dir in Kontakt?
-              <span class="faq__icon" aria-hidden="true"></span>
-            </summary>
-            <div class="faq__answer">
-              <p>Am einfachsten über das Kontaktformular. Dann melde ich mich persönlich, und wir lernen uns ganz unverbindlich kennen. Du sprichst nicht mit einem Team oder einem Setter, sondern direkt mit mir über das, was dich gerade wirklich bewegt.</p>
-            </div>
-          </details>
-
+        <div class="gallery reveal">
+          <figure class="big"><img src="assets/scaling-circle.jpg" alt="Sascha Boampong moderiert ein Scaling-Circle-Mastermind in Lagos" loading="lazy" /></figure>
+          <figure class="sm"><img src="assets/sascha-buehne-energie.jpg" alt="Sascha Boampong mit begeistertem Publikum auf der Bühne" loading="lazy" /></figure>
+          <figure class="sm sm--face"><img src="assets/sascha-lachen.jpg" alt="Sascha Boampong, entspannt und lachend" loading="lazy" /></figure>
+          <figure class="sm"><img src="assets/sascha-buehne-podcast.jpg" alt="Beim Digitale Nomaden Podcast Event" loading="lazy" /></figure>
+          <figure class="sm"><img src="assets/sascha-dnx.jpg" alt="Sascha Boampong bei der DNX Konferenz" loading="lazy" /></figure>
         </div>
       </div>
     </section>
 
-    <!-- ===== 6 · ABSCHLUSS-CTA + KONTAKTFORMULAR ===== -->
-    <section class="section section--alt cta-section" id="kontakt">
-      <div class="container cta-section__inner">
-        <h2 class="cta-section__headline reveal">
-          Im Außen gewachsen.<br>
-          <span class="text-gradient">Zeit, im Innen anzukommen.</span>
-        </h2>
-        <!-- Kontaktformular -->
-        <div class="contact-form reveal reveal-2" id="kontaktformular">
-          <h3 class="contact-form__title">Schreib mir direkt</h3>
-          <form class="form" id="kontakt-form" name="kontakt" method="POST" action="/kontakt">
-            <div class="form__group">
-              <label class="form__label" for="name">Dein Name</label>
-              <input class="form__input" type="text" id="name" name="name" placeholder="Max Mustermann" required />
-            </div>
-            <div class="form__group">
-              <label class="form__label" for="email">Deine E-Mail</label>
-              <input class="form__input" type="email" id="email" name="email" placeholder="max@beispiel.de" required />
-            </div>
-            <div class="form__group">
-              <label class="form__label" for="nachricht">Deine Nachricht</label>
-              <textarea class="form__textarea" id="nachricht" name="nachricht" rows="5" placeholder="Was bewegt dich gerade?" required></textarea>
-            </div>
-            <button type="submit" class="btn btn--primary btn--full" id="submit-btn">Nachricht senden →</button>
-            <div id="form-success" style="display:none; margin-top:16px; padding:14px 18px; background:rgba(21,127,225,0.08); border:1px solid rgba(21,127,225,0.25); border-radius:10px; color:#157fe1; font-size:15px; font-weight:500;">✓ Deine Nachricht wurde gesendet. Ich melde mich persönlich bei dir!</div>
-            <div id="form-error" style="display:none; margin-top:16px; padding:14px 18px; background:rgba(239,68,68,0.08); border:1px solid rgba(239,68,68,0.25); border-radius:10px; color:#dc2626; font-size:15px;"></div>
+    <!-- FAQ -->
+    <section class="section section--alt" id="faq">
+      <div class="wrap">
+        <header class="shead reveal">
+          <div class="shead__meta"><span class="shead__num">04 — FAQ</span><span class="eyebrow">Häufige Fragen</span></div>
+          <h2 class="shead__title">Fragen, die mir immer wieder gestellt werden.</h2>
+        </header>
+        <div class="faq">
+          <details class="faq__item"><summary class="faq__q">Für wen ist diese Arbeit – und für wen nicht?<span class="faq__ic"></span></summary><div class="faq__a"><p>Für Selbstständige und Unternehmer:innen, die weiter wachsen wollen – aber nicht länger auf Kosten von Gesundheit und Leben. Menschen, die getrieben sind, kaum noch abschalten können und sich fragen: „Ich habe so viel erreicht – warum kann ich es nicht genießen?" Oder die ein Problem im Außen schon verstanden haben und mit dem Verstand trotzdem nicht weiterkommen.</p><p>Worum es nicht geht: einfach den Fuß vom Gas zu nehmen. Es geht nicht ums Weniger, sondern darum, erfolgreich zu wachsen und dabei wieder bei sich anzukommen und sich zu erinnern, warum man mal gestartet ist.</p></div></details>
+          <details class="faq__item"><summary class="faq__q">Wie läuft eine Zusammenarbeit konkret ab?<span class="faq__ic"></span></summary><div class="faq__a"><p>Du meldest dich über das Kontaktformular, und wir vereinbaren ein Kennenlernen – per Telefon oder Zoom, ganz wie es dir passt. Wir schauen gemeinsam auf dein Ziel und deine Herausforderungen und finden heraus, ob und wie wir zusammenarbeiten wollen. Danach geht es los. Die eigentliche Arbeit findet online statt.</p></div></details>
+          <details class="faq__item"><summary class="faq__q">Wie kann ich mir eine Session vorstellen?<span class="faq__ic"></span></summary><div class="faq__a"><p>Eine Standard-Session gibt es nicht. Wir schauen zuerst, mit welchem Thema du gerade hereinkommst, und dann wähle ich die Technik, die dazu passt – nicht umgekehrt. Du musst nicht zu meinen Methoden passen, die Methode passt sich dir an. Oft arbeiten wir dabei unterhalb des Verstandes: nicht nur reden, sondern dort ansetzen, wo das Problem wirklich sitzt, die Ursache lösen und das Ergebnis in deinen Alltag integrieren. Im Mittelpunkt steht immer dein Ziel – kein Schema F, in das ich dich presse.</p></div></details>
+          <details class="faq__item"><summary class="faq__q">Was unterscheidet dich von einem klassischen Business-Coach?<span class="faq__ic"></span></summary><div class="faq__a"><p>Ehrlich gesagt tue ich mich mit dem Wort „Coach" schwer – zu viele Instagram-Marketer haben es in Verruf gebracht. Ich bin in erster Linie selbst Unternehmer und begleite Selbstständige und Unternehmer:innen auf dem Weg in ihr Innenleben. Das ist wohl der Hauptunterschied. Ich lehne Geld, Erfolg und Wachstum nicht ab – ganz im Gegenteil, ich habe selbst weiterhin unternehmerischen Drive. Ich verbinde die unternehmerische Arbeit mit Inner Work. Es geht nicht darum, deinen Funnel zu ändern, sondern an die Wurzel deiner Herausforderung zu gehen und dort nachhaltige Veränderung zu schaffen.</p></div></details>
+          <details class="faq__item"><summary class="faq__q">Wie komme ich mit dir in Kontakt?<span class="faq__ic"></span></summary><div class="faq__a"><p>Am einfachsten über das Kontaktformular. Dann melde ich mich persönlich, und wir lernen uns ganz unverbindlich kennen. Du sprichst nicht mit einem Team oder einem Setter, sondern direkt mit mir über das, was dich gerade wirklich bewegt.</p></div></details>
+        </div>
+      </div>
+    </section>
+
+    <!-- KONTAKT -->
+    <section class="section" id="kontakt">
+      <div class="wrap">
+        <div class="contact__panel reveal">
+          <div class="contact__intro">
+            <h2 class="contact__title">Im Außen gewachsen. <em>Zeit, im Innen anzukommen.</em></h2>
+            <p class="contact__sub">Schreib mir direkt. Du sprichst nicht mit einem Team oder einem Setter, sondern mit mir über das, was dich gerade wirklich bewegt.</p>
+          </div>
+          <form class="form" data-form data-access-key="ec78bc60-e349-4be2-aea1-a9e792f29b79">
+            <div class="field"><label for="name">Dein Name</label><input type="text" id="name" name="name" placeholder="Max Mustermann" required /></div>
+            <div class="field"><label for="email">Deine E-Mail</label><input type="email" id="email" name="email" placeholder="max@beispiel.de" required /></div>
+            <div class="field"><label for="nachricht">Deine Nachricht</label><textarea id="nachricht" name="nachricht" placeholder="Was bewegt dich gerade?" required></textarea></div>
+            <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px;opacity:0" aria-hidden="true" />
+            <button type="submit" class="btn btn--solid">Nachricht senden <span class="arrow">→</span></button>
+            <p class="form__ok" data-success>✓ Deine Nachricht wurde gesendet. Ich melde mich persönlich bei dir.</p>
+            <p class="form__err" data-error></p>
           </form>
         </div>
       </div>
@@ -313,36 +212,28 @@
 
   </main>
 
-  <!-- ===== FOOTER ===== -->
   <footer class="footer">
-    <div class="container footer__inner">
+    <div class="wrap">
       <div class="footer__top">
-        <a href="#top" class="footer__logo">Sascha Boampong</a>
-        <nav class="footer__nav" aria-label="Footer-Navigation">
-          <a href="#mein-weg" class="footer__link">Zusammenarbeit</a>
-          <a href="#referenzen" class="footer__link">Referenzen</a>
-          <a href="#ueber-mich" class="footer__link">Über mich</a>
-          <a href="#faq" class="footer__link">FAQ</a>
+        <a href="#top" class="footer__brand">Sascha Boampong</a>
+        <nav class="footer__nav" aria-label="Footer">
+          <a href="#prozess">Zusammenarbeit</a>
+          <a href="#referenzen">Referenzen</a>
+          <a href="#ueber">Über mich</a>
+          <a href="#faq">FAQ</a>
         </nav>
         <div class="footer__social">
-          <a href="https://www.linkedin.com/in/sascha-boampong/" class="footer__social-link" aria-label="LinkedIn" title="LinkedIn" target="_blank" rel="noopener">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-          </a>
-          <a href="https://www.instagram.com/saschaboampong/" class="footer__social-link" aria-label="Instagram" title="Instagram" target="_blank" rel="noopener">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
-          </a>
+          <a href="https://www.linkedin.com/in/sascha-boampong/" aria-label="LinkedIn" target="_blank" rel="noopener"><svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+          <a href="https://www.instagram.com/saschaboampong/" aria-label="Instagram" target="_blank" rel="noopener"><svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg></a>
         </div>
       </div>
       <div class="footer__bottom">
-        <div class="footer__legal">
-          <a href="impressum.html" class="footer__legal-link">Impressum</a>
-          <a href="datenschutz.html" class="footer__legal-link">Datenschutz</a>
-        </div>
+        <div class="footer__legal"><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a></div>
         <p class="footer__copy">© 2026 Sascha Boampong</p>
       </div>
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="site.js"></script>
 </body>
 </html>
